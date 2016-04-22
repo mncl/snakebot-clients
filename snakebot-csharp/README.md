@@ -75,12 +75,12 @@ public class MySnakeBot : SnakeBot
 }
 ```
 
-The Main()-method in Program.cs wires up the WebSocket connection with the SnakeClient and the SnakeBot of your choice. You can choose to omit the GamePrinter parameter in SnakeClient. Or, if you prefer, you can provide another implementation to log or do whatever cool stuff you like.
+The se.cygni.snake.Main()-method in Program.cs wires up the WebSocket connection with the SnakeClient and the SnakeBot of your choice. You can choose to omit the GamePrinter parameter in SnakeClient. Or, if you prefer, you can provide another implementation to log or do whatever cool stuff you like.
 
 ```csharp
 public class Program
 {
-    public static void Main(string[] args)
+    public static void se.cygni.snake.Main(string[] args)
     {
         var ws = new ClientWebSocket();
         ws.ConnectAsync(new Uri("ws://snake.cygni.se:80/training"), CancellationToken.None).Wait();
